@@ -9,8 +9,8 @@ describe('PrimeSifter#array_maker') do
 end
 
 describe('PrimeSifter#reducer') do
-  it('sets a variable prime equal to 2, and remove all entries from an array equal to prime') do
+  it('removes all entries from an array of numbers 2..input that are divisible by prime numbers') do
     sifted = PrimeSifter.new(10)
-    expect(sifted.reducer).to(eq([3,5,7,9]))
+    expect(sifted.reducer).to(eq([2,3,5,7]))
   end
 end
