@@ -16,7 +16,10 @@ class PrimeSifter
   end
 
   def reducer
-    # code
+    working_array = array_maker()
+    prime = 2
+    working_array.reject! {|element| element % prime == 0}
+    working_array
   end
 
 end
