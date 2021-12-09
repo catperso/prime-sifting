@@ -5,7 +5,7 @@ class PrimeSifter
     @number = number
   end
   
-  def reducer
+  def array_maker
     test_array = []
     pusher = 2
     while pusher <= @number
@@ -13,6 +13,10 @@ class PrimeSifter
       pusher += 1
     end
     test_array
+  end
+
+  def reducer
+    # code
   end
 
 end
